@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"ContoCorrente"},{"p":"<Unnamed>","l":"Main.depositaListener"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Main.mostraSaldoListener"},{"p":"<Unnamed>","l":"Main.prelevaListener"}];updateSearchResults();
