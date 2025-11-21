@@ -1,0 +1,265 @@
+body {
+    display: block;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+.header {
+    display: flex;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header img{
+    width: 100px;
+}
+
+.header .sezioni {
+    padding-left: 200px;
+    width: 50%;
+    align-content: center;
+}
+
+.header .sezioni ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .sezioni ul li {
+    list-style: none;
+}
+
+.header .sezioni ul a {
+    color: black;
+    text-decoration: none;
+}
+
+/*immagine*/
+.immagine img{
+    width: 100%;
+}
+
+/*box1*/
+.box1 {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.box1 .testo1 {
+    padding-right: 100px;
+    font-size: x-large;
+    font-weight: 550;
+}
+
+.box1 .testo2 {
+    font-size: 22px;
+}
+
+/*testo centrale*/
+.testo {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+}
+
+/*box immagini*/
+.box_img1 {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.box_img1 .box_img_cont1{
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    background-color: #155674;
+    color: white;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.box_img1 .box_img_cont1 img{
+    width: auto;
+    height: 200px;
+    padding-left: 50px;
+}
+
+.box_img1 .box_img_cont2{
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    background-color: #155674;
+    color: white;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+.box_img1 .box_img_cont2 img{
+    width: auto;
+    height: 200px;
+    padding-left: 189px;
+}
+
+.box_img2 {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.box_img2 .box_img_cont1{
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    background-color: #155674;
+    color: white;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.box_img2 .box_img_cont1 img{
+    width: auto;
+    height: 200px;
+    padding-left: 217.13px;
+}
+
+.box_img2 .box_img_cont2{
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    background-color: #155674;
+    color: white;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+.box_img2 .box_img_cont2 img{
+    width: auto;
+    height: 200px;
+    padding-left: 51px;
+}
+
+/*box grande*/
+.box_grande {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    padding-top: 200px;
+    height: 400px;
+    background-color: #155674;
+    color: white;
+    text-align: center;
+}
+
+.box_grande button {
+    background-color: #C0CE1F;
+    color: #155674;
+    font-size: large;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+/*news*/
+.news {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news .settimana {
+    background-color: #155674;
+    color: white;
+    padding-left: 20px;
+    padding-right: 100px;
+    height: 200px;
+}
+
+.news .mese {
+    background-color: #3D7A96;
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    height: 200px;
+}
+
+.news .trimestre {
+    background-color: #3D5F6B;
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    height: 200px;
+}
+
+.news .mercato {
+    background-color: #528EA8;
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    height: 200px;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    background-color: #155674;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer img {
+    width: 100px;
+    height: auto;
+}
+
+.footer .informazioni {
+    display: flex;
+}
+
+.footer .informazioni .inf1 {
+    color: white;
+}
+
+.footer .informazioni .inf1 h1 {
+    font-weight: 100;
+    font-size: x-large;
+}
+
+.footer .informazioni .inf2 {
+    color: white;
+    padding-left: 50px;
+}
+
+.footer .informazioni .inf2 h1 {
+    font-weight: 100;
+    font-size: x-large;
+}
+
+.footer .informazioni .inf2 button {
+    background-color: #C0CE1F;
+    color: #155674;
+    font-size: large;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    font-size: medium;
+}
