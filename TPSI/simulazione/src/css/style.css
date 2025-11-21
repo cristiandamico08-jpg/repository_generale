@@ -1,0 +1,174 @@
+body {
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.titolo {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 75px;
+}
+
+.titolo h1 {
+    color: white;
+    font-size: xxx-large;
+    padding-left: 10px;
+}
+
+.box1 {
+    background-color: white;
+    border-color: black;
+    border: 5px;
+    border-style: solid;
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.box1 .contenuto {
+    display: flex;
+}
+
+.box1 .contenuto .testo{
+    padding-left: 10px;
+}
+
+.box2 {
+    background-color: white;
+    border-color: black;
+    border: 5px;
+    border-style: solid;
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.box2 .contenuto {
+    display: flex;
+}
+
+.box2 .contenuto .testo{
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.linguaggi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 75px;
+}
+
+.linguaggi img {
+    background-color: #FFE138;
+    padding-right: 20px;
+}
+
+.linguaggi .html {
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 240px;
+    height: 290px;
+    padding: 5px;
+    text-align: center;
+}
+
+.linguaggi .php {
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 240px;
+    height: 290px;
+    padding: 5px;
+    text-align: center;
+}
+
+.linguaggi .js {
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 240px;
+    height: 290px;
+    padding: 5px;
+    text-align: center;
+}
+
+.linguaggi .responsive {
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 240px;
+    height: 290px;
+    padding: 5px;
+    text-align: center;
+}
+
+.sponsor {
+    background-color: white;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sponsor h1 {
+    color: black;
+}
+
+.sponsor .immagini {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 225px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 0;
+    height: 300px;
+    align-items: center;
+    padding-top: 250px;
+}
+
+.footer a {
+    color: #E50661;
+    text-decoration: none;
+}
