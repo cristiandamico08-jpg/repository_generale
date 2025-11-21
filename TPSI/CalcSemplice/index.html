@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Calcolatrice semplice</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <h1>Calcolatrice semplice</h1>
+    <p>Inserisci due numeri e clicca un bottone.</p>
+    <input type="text" placeholder="Primo Numero" id="numero1">
+    <input type="text" placeholder="Secondo Numero" id="numero2">
+    <div class="bottoni1">
+        <button onclick="sommaNumeri()">Somma</button>
+        <button onclick="sottrazioneNumeri()" class="secondo_bot">Sottrazione</button>
+    </div>
+    <div class="bottoni2">
+        <button onclick="moltiplicazioneNumeri()">Moltiplicazione</button>
+        <button onclick="divisioneNumeri()" class="secondo_bot">Divisione</button>
+    </div>
+    <input type="text" placeholder="Risultato" readonly id="risultato">
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
