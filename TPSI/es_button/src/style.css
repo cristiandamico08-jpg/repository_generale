@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(213, 213, 213);
+    margin: 50px;
+    text-align: center;
+}
+
+form {
+    align-items: center;
+}
+
+form h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.button {
+    padding: 20px;
+    font-size: large;
+    background-color: rgb(0, 166, 255);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.button:hover {
+    padding: 20px;
+    font-size: large;
+    background-color: rgb(0, 136, 255);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
