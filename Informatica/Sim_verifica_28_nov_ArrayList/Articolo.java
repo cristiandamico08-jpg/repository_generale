@@ -1,4 +1,4 @@
-package repository_generale.Informatica.Sim_verifica_28_nov;
+package repository_generale.Informatica.Sim_verifica_28_nov_ArrayList;
 
 public class Articolo {
 
