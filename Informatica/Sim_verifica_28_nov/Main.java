@@ -1,17 +1,36 @@
 package repository_generale.Informatica.Sim_verifica_28_nov;
 import java.util.Scanner;
 
+/**
+ * Classe Main che rappresenta un semplice sistema di ordinazione di panini e bibite.
+ * Utilizza array per gestire gli articoli disponibili e calcola il totale dell'ordine.
+ * 
+ * @author Cristian Dylan D'Amico
+ */
+
 public class Main {
 
+    /** Scanner per l'input dell'utente */
     private Scanner input = new Scanner(System.in);
+
+    /** Dimensione massima delle liste di articoli */
     private final int dim = 3;
+
+    /** Liste di articoli: panini e bibite */
     private Articolo[] panini = new Articolo[dim];
     private Articolo[] bibite = new Articolo[dim];
+
+    /** Variabili per la scelta dell'utente e il calcolo del totale */
     private int scelta;
     private double totale;
     private double arrotondamento;
+
+    /** Variabile temporanea per il bubble sort */
     private Articolo temp = new Articolo(null, 0);
 
+    /** 
+     * Costruttore con all'interno l'esercizio svolto
+     */
     public Main(){
 
         panini[0] = new Articolo("Prosciutto cotto", 2.50);
@@ -104,6 +123,11 @@ public class Main {
         } while (true);
     }
 
+    /**
+     * Metodo principale per avviare l'applicazione.
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
         new Main();
     }
