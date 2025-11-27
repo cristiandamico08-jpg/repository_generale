@@ -25,4 +25,11 @@ public class Articolo {
         return IVA;
     }
     
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setPrezzo(double prezzo) {
+        this.prezzo = prezzo;
+    }
 }
