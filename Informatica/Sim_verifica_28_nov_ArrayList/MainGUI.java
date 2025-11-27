@@ -4,13 +4,25 @@ import java.util.ArrayList;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Classe MainGUI che rappresenta l'interfaccia grafica per visualizzare una lista di panini e bibite ordinati per prezzo decrescente.
+ * Utilizza ArrayList per gestire gli articoli disponibili.
+ * 
+ * @author Cristian Dylan D'Amico
+ */
 public class MainGUI extends JFrame{
     
+    /** Liste di articoli: panini e bibite */
     private ArrayList<Articolo> panini = new ArrayList<Articolo>();
     private ArrayList<Articolo> bibite = new ArrayList<Articolo>();
+
+    /** Costante per la lista degli articoli */
     private final int dim = 3;
+
+    /** Variabile temporanea per il bubble sort */
     private Articolo temp = new Articolo(null, 0);
 
+    /** Costruttore con esercizio svolto */
     public MainGUI() {
         setTitle("Lista panini e bibite");
         setSize(1000,720);
@@ -77,7 +89,12 @@ public class MainGUI extends JFrame{
 
         setVisible(true);
     }
-
+    
+    /**
+     * Metodo main per avviare l'applicazione.
+     * 
+     * @param args argomenti della linea di comando
+     */
     public static void main(String[] args) {
         new MainGUI();
     }
