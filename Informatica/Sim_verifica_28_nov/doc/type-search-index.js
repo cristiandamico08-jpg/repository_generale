@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"repository_generale.Informatica.Sim_verifica_28_nov","l":"Articolo"},{"p":"repository_generale.Informatica.Sim_verifica_28_nov","l":"Main"}];updateSearchResults();
