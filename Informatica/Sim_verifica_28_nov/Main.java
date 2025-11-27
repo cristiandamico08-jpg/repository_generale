@@ -10,6 +10,7 @@ public class Main {
     private int scelta;
     private double totale;
     private double arrotondamento;
+    private Articolo temp = new Articolo(null, 0);
 
     public Main(){
 
@@ -32,7 +33,16 @@ public class Main {
                 case 1:
 
                     System.out.println("\nElenco Panini:");
-                    for (int i = 0; i < dim; i++) {
+                    for (int i = 0; i < dim-1; i++) {
+                        for (int j = 0; j < dim-1; j++) {
+                            if (panini[j].getPrezzo() > panini[j+1].getPrezzo()) {
+                                temp = panini[j];
+                                panini[j] = panini[j+1];
+                                panini[j+1] = temp;
+                            }
+                        }
+                    }
+                    for (int i = 0; i < 3; i++) {
                         System.out.println((i + 1) + ". " + panini[i].getNome() + " - Prezzo: " + panini[i].getPrezzo() + " Euro - Prezzo con IVA: " + panini[i].calcolaPrezzoConIVA() + " Euro");
                     }
 
@@ -55,6 +65,15 @@ public class Main {
                 case 2:
 
                     System.out.println("\nElenco Bibite:");
+                    for (int i = 0; i < dim-1; i++) {
+                        for (int j = 0; j < dim-1; j++) {
+                            if (panini[j].getPrezzo() > panini[j+1].getPrezzo()) {
+                                temp = panini[j];
+                                panini[j] = panini[j+1];
+                                panini[j+1] = temp;
+                            }
+                        }
+                    }
                     for (int i = 0; i < dim; i++) {
                         System.out.println((i + 1) + ". " + bibite[i].getNome() + " - Prezzo: " + bibite[i].getPrezzo() + " Euro - Prezzo con IVA: " + bibite[i].calcolaPrezzoConIVA() + " Euro");
                     }
