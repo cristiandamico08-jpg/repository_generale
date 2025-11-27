@@ -2,17 +2,34 @@ package repository_generale.Informatica.Sim_verifica_28_nov_ArrayList;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/**
+ * @author Cristian Dylan D'Amico
+ * Classe Main che rappresenta un semplice sistema di ordinazione di panini e bibite.
+ * Utilizza ArrayList per gestire gli articoli disponibili e calcola il totale dell'ordine.
+ */
 public class Main {
 
+    /** Scanner per l'input dell'utente */
     private Scanner input = new Scanner(System.in);
+
+    /** Dimensione massima delle liste di articoli */
     private final int dim = 3;
+
+    /** Liste di articoli: panini e bibite */
     private ArrayList<Articolo> panini = new ArrayList<Articolo>();
     private ArrayList<Articolo> bibite = new ArrayList<Articolo>();
+
+    /** Variabili per la scelta dell'utente e il calcolo del totale */
     private int scelta;
     private double totale;
     private double arrotondamento;
+
+    /** Variabile temporanea per il bubble sort */
     private Articolo temp = new Articolo(null, 0);
 
+    /** 
+     * Costruttore con all'interno l'esercizio svolto
+     */
     public Main(){
 
         panini.add(0, new Articolo("Prosciutto e formaggio", 4.00));
@@ -105,6 +122,11 @@ public class Main {
         } while (true);
     }
 
+    /**
+     * Metodo principale per avviare l'applicazione.
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
         new Main();
     }
