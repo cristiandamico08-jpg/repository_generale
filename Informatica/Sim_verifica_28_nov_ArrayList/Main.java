@@ -3,9 +3,10 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * @author Cristian Dylan D'Amico
  * Classe Main che rappresenta un semplice sistema di ordinazione di panini e bibite.
  * Utilizza ArrayList per gestire gli articoli disponibili e calcola il totale dell'ordine.
+ * 
+ * @author Cristian Dylan D'Amico
  */
 public class Main {
 

@@ -1,10 +1,11 @@
 package repository_generale.Informatica.Sim_verifica_28_nov_ArrayList;
 
 /**
- * @author Cristian Dylan D'Amico
  * Classe Articolo che rappresenta un articolo con nome, prezzo e IVA.
  * Fornisce metodi per ottenere e impostare i valori degli attributi,
  * nonché per calcolare il prezzo comprensivo di IVA.
+ * 
+ * @author Cristian Dylan D'Amico
  */
 
 public class Articolo {
