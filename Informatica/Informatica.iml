@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/ATM" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NumeroMag" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Preside" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TestParcoAuto" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/es_5bottoni" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/libreria" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/magazzino" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/verifica_28_nov" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
