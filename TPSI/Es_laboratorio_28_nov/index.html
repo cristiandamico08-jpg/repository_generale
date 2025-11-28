@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Qual e' il linguaggio di scripting del browser?</h1>
+        <form id="quizForm">
+            <p>Scegli la risposta corretta:</p>
+            <label>
+                <input type="radio" name="risposta" value=" Pyton" id="radioA"> Pyton
+            </label><br/>
+
+            <label>
+                <input type="radio" name="risposta" value=" JavaScript" id="radioB"> JavaScript
+            </label><br/>
+
+            <label>
+                <input type="radio" name="risposta" value=" Java" id="radioC"> Java
+            </label><br/>
+
+            <label>
+                <input type="radio" name="risposta" value=" C++" id="radioD"> C++
+            </label><br/><br/>
+
+            <button type="submit" id="verificaBtn">Mostra selezione</button><br/><br/>
+
+            <div id="risultato">
+                Risposta selezionata: (Nessuna)
+            </div>
+        </form>
+
+        <script src="src/js/script.js"></script>
+    </div>
+</body>
+</html>
