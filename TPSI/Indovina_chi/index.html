@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Indovina chi?</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+</head>
+<body>
+    <div class="contenitore-principale">
+        <div class="barra-laterale">
+            <h2>Personaggi</h2>
+            <ul id="lista-personaggi">
+                <li class="personaggio" onclick="selezionaPersonaggio('Albert Einstein')">Albert Einstein</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Marie Curie')">Marie Curie</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Isaac Newton')">Isaac Newton</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Ada Lovelace')">Ada Lovelace</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Galileo Galilei')">Galileo Galilei</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Nikola Tesla')">Nikola Tesla</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Charles Darwin')">Charles Darwin</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Leonardo da Vinci')">Leonardo da Vinci</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Carl Sagan')">Carl Sagan</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Stephen Hawking')">Stephen Hawking</li>
+                <li class="personaggio" onclick="selezionaPersonaggio('Adriano Ciraudo')">Adriano Ciraudo</li>
+            </ul>
+        </div>
+
+        <div class="contenuto">
+            <h1>Indovina chi?</h1>
+            <p>Testami, vediamo se riesco ad indovinare il tuo personaggio!</p>
+            <br><br>
+            <div id="contenitore-domande" style="display:none;">
+                <p id="domanda">Clicca per iniziare a rispondere alle domande.</p>
+                <br><br>
+                <div id="risposte">
+                    <button class="btn-risposta" onclick="risposta('si')">Sì</button>
+                    <button class="btn-risposta" onclick="risposta('no')">No</button>
+                </div>
+            </div>
+            <button id="btn-start" onclick="iniziaGioco()">Inizia</button>
+        </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
