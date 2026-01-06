@@ -5,7 +5,7 @@ public class Automobile extends Veicolo {
     private Integer numeroPosti;
     private Integer cilindrata;
 
-    public Automobile(String targa, String marca, String orarioIngresso, Integer numeroPosti, Integer cilindrata) {
+    public Automobile(String targa, String marca, Integer orarioIngresso, Integer numeroPosti, Integer cilindrata) {
         super(targa, marca, orarioIngresso);
         this.numeroPosti = numeroPosti;
         this.cilindrata = cilindrata;

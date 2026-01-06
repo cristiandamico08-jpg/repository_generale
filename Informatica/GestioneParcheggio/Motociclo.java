@@ -5,7 +5,7 @@ public class Motociclo extends Veicolo {
     private Integer numeroPosti;
     private Integer cilindrata;
 
-    public Motociclo(String targa, String marca, String orarioIngresso, Integer numeroPosti, Integer cilindrata) {
+    public Motociclo(String targa, String marca, Integer orarioIngresso, Integer numeroPosti, Integer cilindrata) {
         super(targa, marca, orarioIngresso);
         this.numeroPosti = numeroPosti;
         this.cilindrata = cilindrata;

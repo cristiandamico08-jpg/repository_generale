@@ -3,9 +3,9 @@ package Informatica.GestioneParcheggio;
 public class Veicolo {
     private String targa;
     private String marca;
-    private String orarioIngresso;
+    private Integer orarioIngresso;
 
-    public Veicolo(String targa, String marca, String orarioIngresso) {
+    public Veicolo(String targa, String marca, Integer orarioIngresso) {
         this.targa = targa;
         this.marca = marca;
         this.orarioIngresso = orarioIngresso;
@@ -27,11 +27,11 @@ public class Veicolo {
         this.marca = marca;
     }
 
-    public String getOrarioIngresso() {
+    public Integer getOrarioIngresso() {
         return orarioIngresso;
     }
 
-    public void setOrarioIngresso(String orarioIngresso) {
+    public void setOrarioIngresso(Integer orarioIngresso) {
         this.orarioIngresso = orarioIngresso;
     }
 }
