@@ -12,7 +12,7 @@ Main <.. Veicolo
 class Veicolo {
     -String targa
     -String marca
-    -String orarioIngresso
+    -Integer orarioIngresso
     --
     +String getTarga()
     +String getMarca()
