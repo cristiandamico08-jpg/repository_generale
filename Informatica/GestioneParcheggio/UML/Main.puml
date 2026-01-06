@@ -1,0 +1,46 @@
+@startuml Main.puml
+!theme spacelab
+
+class Main {
+    + static void main(String[] args)
+    --
+    +Main()
+}
+
+Main <.. Veicolo
+
+class Veicolo {
+    -String targa
+    -String marca
+    -String orarioIngresso
+    --
+    +String getTarga()
+    +String getMarca()
+    +String getOrarioIngresso()
+    --
+    +void setTarga(String targa)
+    +void setMarca(String marca)
+    +void setOrarioIngresso(String orarioIngresso)
+}
+
+class Automobile extends Veicolo {
+    -Integer numeroPosti
+    -Integer cilindrata
+    --
+    +String getNumeroPosti()
+    +String getCilindrata()
+    --
+    +void setNumeroPosti(Integer numeroPosti)
+    +void setCilindrata(Integer cilindrata)
+}
+
+class Moticiclo extends Veicolo {
+    -Integer numeroPosti
+    -Integer cilindrata
+    --
+    +String getNumeroPosti()
+    +String getCilindrata()
+    --
+    +void setNumeroPosti(Integer numeroPosti)
+    +void setCilindrata(Integer cilindrata)
+}
