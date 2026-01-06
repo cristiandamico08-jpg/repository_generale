@@ -13,7 +13,10 @@ public class Main {
     private double totale = 0;
     private int scelta;
     private String targa;
-    private String targaDaRimuovere;
+    private String marca;
+    private int orarioIngresso = 0;
+    private int numeroPosti = 0;
+    private int cilindrata = 0;
     
     public Main(){
         veicoli.add(new Automobile("AB123CD", "Fiat", 10, 5, 1200));
@@ -69,24 +72,47 @@ public class Main {
 
 
                 case 3:
-                    // Codice per aggiungere/rimuovere veicolo
                     System.out.println("1. Aggiungi veicolo");
                     System.out.println("2. Rimuovi veicolo");
                     System.out.print("Scelta: ");
                     scelta = input.nextInt();
                     input.nextLine();
+                    System.out.println("\n");
 
                     switch (scelta) {
                         case 1:
-                            
-                            break;
+                            if (veicoli.size() == dim) {
+                                System.out.println("Parcheggio pieno. Impossibile aggiungere altri veicoli.");
+                                break;
+                            } else {
+                                System.out.println("Inserisci targa: ");
+                                targa = input.nextLine();
+                                System.out.println("Inserisci marca: ");
+                                marca = input.nextLine();
+                                System.out.println("Inserisci orario ingresso: ");
+                                orarioIngresso = input.nextInt();
+                                System.out.println("Inserisci numero posti: ");
+                                numeroPosti = input.nextInt();
+                                System.out.println("Inserisci cilindrata: ");
+                                cilindrata = input.nextInt();
+                                System.out.println("Tipo di veicolo:\n1. Automobile\n2. Motociclo");
+                                scelta = input.nextInt();
+                                input.nextLine();
+                                if (scelta == 1) {
+                                    veicoli.add(new Automobile(targa, marca, orarioIngresso, numeroPosti, cilindrata));
+                                } else if (scelta == 2) {
+                                    veicoli.add(new Motociclo(targa, marca, orarioIngresso, numeroPosti, cilindrata));
+                                }
+                                System.out.println("Veicolo aggiunto con successo.");
+                                break;
+                            }
 
                         case 2:
                             System.out.println("Inserisci targa del veicolo da rimuovere: ");
-                            targaDaRimuovere = input.nextLine();
+                            targa = input.nextLine();
                             input.nextLine();
                             for (int i = 0; i < veicoli.size(); i++) {
-                                if (veicoli.get(i).getTarga().equals(targaDaRimuovere)) {
+                                if (veicoli.get(i).getTarga().equals(targa)) {
                                     veicoli.remove(i);
                                     System.out.println("Veicolo rimosso con successo.");
                                     break;
