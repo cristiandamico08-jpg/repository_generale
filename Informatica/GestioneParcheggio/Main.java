@@ -17,6 +17,7 @@ public class Main {
     private int orarioIngresso = 0;
     private int numeroPosti = 0;
     private int cilindrata = 0;
+    private Veicolo veicolo;
     
     public Main(){
         veicoli.add(new Automobile("AB123CD", "Fiat", 10, 5, 1200));
