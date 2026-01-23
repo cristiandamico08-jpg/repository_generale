@@ -46,6 +46,42 @@ const personaggi = [
     {
         nome: "Adriano Ciraudo",
         domande: [false, false, false, false, false, false, false, true, false, false]
+    },
+    {
+        nome: "Alan Turing",
+        domande: [false, true, false, false, false, true, false, false, false, false]
+    },
+    {
+        nome: "Enrico Fermi",
+        domande: [false, true, true, false, false, true, true, true, false, true]
+    },
+    {
+        nome: "Rita Levi-Montalcini",
+        domande: [true, false, false, true, false, true, false, true, false, false]
+    },
+    {
+        nome: "Richard Feynman",
+        domande: [true, false, true, false, false, true, true, false, false, false]
+    },
+    {
+        nome: "Gregor Mendel",
+        domande: [false, false, false, false, false, false, false, false, false, false]
+    },
+    {
+        nome: "James Clerk Maxwell",
+        domande: [false, true, true, false, false, false, true, false, false, true]
+    },
+    {
+        nome: "Niels Bohr",
+        domande: [true, false, true, false, false, true, true, false, false, false]
+    },
+    {
+        nome: "Samantha Cristoforetti",
+        domande: [false, false, false, true, false, false, false, true, false, false]
+    },
+    {
+        nome: "Michael Faraday",
+        domande: [false, false, true, false, false, true, true, false, false, true]
     }
 ];
 
