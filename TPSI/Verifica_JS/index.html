@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Verifica JS</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="box_matematica">
+        <h1>Verifica di Matematica</h1>
+        <p>Rispondi alle domande e poi premi "Correggi Verifica".</p>
+        <div class="quesiti">
+            <h4>Quesito 1</h4>
+        </div>
+        <div class="domandeMatematica">
+            <p>Quanto fa <b>125 * 8</b></p>
+            <input type="radio" name="gruppoMatematica1" value="false">800 <br/>
+            <input type="radio" name="gruppoMatematica1" value="colora">1000 <br/>
+            <input type="radio" name="gruppoMatematica1" value="false">1250 <br/>
+            <input type="radio" name="gruppoMatematica1" value="false">950 <br/>
+        </div>
+        <div class="quesiti">
+            <h4>Quesito 2</h4>
+        </div>
+        <div class="domandeMatematica">
+            <p>Quanto fa <b>144 / 12</b></p>
+            <input type="radio" name="gruppoMatematica2" value="false">10 <br/>
+            <input type="radio" name="gruppoMatematica2" value="false">14 <br/>
+            <input type="radio" name="gruppoMatematica2" value="colora2">12 <br/>
+            <input type="radio" name="gruppoMatematica2" value="false">11 <br/>
+        </div>
+        <button onclick="correggiVerifica()" id="correggiVerifica">CORREGGI VERIFICA</button>
+        <p id="risultatoMatematica"> </p>
+    </div>
+    <div class="barraDestra">
+        <div class="login">
+            <h3>Login</h3>
+            Utente: <br/>
+            <input type="text" id="username" placeholder="es. studente"> <br/><br/>
+            Password: <br/>
+            <input type="password" id="password" placeholder="es. 1234"> <br/>
+            <button onclick="accedi()" id="accedi">Accedi</button>
+        </div>
+
+        <div class="calcolatrice">
+            <h3>Calcolatrice</h3>
+            <input type="number" id="num1" placeholder="Numero 1"> <br/>
+            <select id="menuOperazioni">
+                <option value="somma">Somma (+)</option>
+                <option value="differenza">Differenza (-)</option>
+                <option value="moltiplicazione">Moltiplicazione (*)</option>
+                <option value="divisione">Divivsione (/)</option>
+            </select> <br/>
+            <input type="number" id="num2" placeholder="Numero 2"> <br/>
+            <button onclick="calcola()" id="calcola">Calcola</button> <br/>
+            Risultato: <br/>
+            <input type="text" id="risultatoCalcolatrice" readonly>
+        </div>
+
+        <div class="consegna">
+            <h3>Consegna</h3>
+            Note per il prof: <br/>
+            <textarea id="textArea" placeholder="Note..."></textarea> <br/><br/>
+            <input type="checkbox" value="true" name="checkBox"> Ho controllato tutto.<br/>
+            <button onclick="terminaCompito()" id="terminaCompito">TERMINA COMPITO</button>
+        </div>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
