@@ -1,0 +1,18 @@
+@startuml diagrammaDiStato.puml
+
+top to bottom direction
+
+state Libero #LightBlue
+state Occupato #LightBlue
+
+[*] -> Libero : Inizializza Array\n(ciclo for iniziale)
+Libero -> Occupato : entraAuto()\n[Se viene trovato qusto posto libero]
+Occupato -> Libero : esceAuto()\n[Se l'utente conferma col prompt/confirm]
+
+Libero : ValoreJS: parcheggio[i] = 0
+Libero : DOM: (Cannot decode)
+
+Occupato : ValoreJS: parcheggio[i] = 1
+Occupato : DOM: (Cannot decode)
+
+@enduml

@@ -2,7 +2,7 @@
 
 actor Utente as utente
 
-alt Posto Libero Parcheggio
+alt Posto libero trovato
 
 participant "Interfaccia (HTML/DOM)" as interfaccia
 participant "Logica (parcheggio.js)" as logica
@@ -10,9 +10,27 @@ participant "Logica (parcheggio.js)" as logica
 utente -> interfaccia : Clicca "Fai entrare\nun auto"
 activate interfaccia
 
+interfaccia -> logica : entraAuto()
+activate logica
 
+note right of logica : Inizia il ciclo for sull'array
+logica -> logica : Cerca il primo 0 nell'array
 
-interfaccia -> utente : Mostra il parcheggio\naggiorato a schermo
+logica -> logica : parcheggio[i] = 1
+logica -> interfaccia : alert("Auto parcheggiata!")
+logica -> logica : aggiornaSchermo()
+
+note right of logica : Sostituisce la spunta verde\ncon la X rossa
+
+logica -> interfaccia : innerHTML = nuovo HTML\ncon immagini
+
+else Nessun posto libero (Tutti 1)
+
+logica -> interfaccia : alert("Parcheggio pieno!")
+
+end
+
+interfaccia --> utente : Mostra il parcheggio\naggiorato a schermo
 deactivate interfaccia
 
 @enduml
