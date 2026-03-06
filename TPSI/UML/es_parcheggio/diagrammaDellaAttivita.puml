@@ -6,15 +6,23 @@ start
 :postoTrovato = false;
 
 while (Per ogni elemento 'i' nell'array parcheggio)
-    while (parcheggio[i] == 0) is (Sì, posto libero)
+    if (parcheggio[i] == 0) then (Sì, posto libero)
         :parcheggio[i] == 1 (Diventa occupato);
         :postoTrovato = true;
         :alert("Auto parcheggiata al posto" + (i+1));
-    endwhile (No, già occupato)
+        break;
+    else (No, già occupato)
         :Passa al prossimo "i";
+    endif
 endwhile
-if (postoTrovato == false?)
 
+if (postoTrovato == false?) then (Sì, nessun posto a 0)
+    :alert("Attenzione: Parcheggio pieno!");
+else (No, auto entrata)
+endif
+
+:Chiama funzione aggiornaSchermo();
+note right : Qui il DOM viene aggiornato inserendo\nle (Cannot decode) nei posti a 1
 
 stop
 
