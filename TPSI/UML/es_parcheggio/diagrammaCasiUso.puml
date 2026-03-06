@@ -1,0 +1,23 @@
+@startuml diagrammiCasiUso.puml
+
+left to right direction
+
+actor "Utente\n(Operatore o Autista)" as utente
+
+rectangle "Sistema Gestione Parcheggio"{
+    usecase "Registra Ingresso Auto" as ingresso
+    usecase "Registra Uscita Utente" as uscita
+    usecase "Mostra Avviso/Errore" as mostra
+    usecase "Visualizza Stato Parcheggio" as visualizza 
+}
+
+utente --> ingresso
+utente --> uscita
+utente --> visualizza
+
+ingresso ..> mostra : "<<extends>>\n(Se parcheggio pieno)"
+ingresso ..> visualizza : "<<include>>"
+uscita ..> mostra : "<<extends>>\n(Se posto non valido)"
+uscita ..> visualizza : "<<include>>"
+
+@enduml

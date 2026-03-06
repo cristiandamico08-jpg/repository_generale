@@ -1,0 +1,18 @@
+@startuml diagrammaDiSequenza.puml
+
+actor Utente as utente
+
+alt Posto Libero Parcheggio
+
+participant "Interfaccia (HTML/DOM)" as interfaccia
+participant "Logica (parcheggio.js)" as logica
+
+utente -> interfaccia : Clicca "Fai entrare\nun auto"
+activate interfaccia
+
+
+
+interfaccia -> utente : Mostra il parcheggio\naggiorato a schermo
+deactivate interfaccia
+
+@enduml

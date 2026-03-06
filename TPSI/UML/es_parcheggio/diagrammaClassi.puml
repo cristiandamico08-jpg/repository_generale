@@ -1,0 +1,33 @@
+@startuml diagrammaClassi.puml
+
+class Parcheggio {
+    -capienzaMassima: Integer
+    -posti: Array 
+    --
+    +aggiornaSchermo(): void
+    +entrataAuto(): void
+    +esceAuto(): void
+}
+
+class PostoAuto {
+    -numeroInteger: Integer
+    -stato: Integer
+    -immagine: String
+    --
+    +getStato(): Integer
+    +getImmmagine(): String
+}
+
+note right of PostoAuto::stato
+    0 = Libero
+    1 = Occupato
+end note
+
+note right of PostoAuto::immagine
+    "spunta_verde.png"
+    "x_rossa.png"
+end note
+
+Parcheggio "1" *-- "1..*" PostoAuto : contiene >
+
+@enduml
