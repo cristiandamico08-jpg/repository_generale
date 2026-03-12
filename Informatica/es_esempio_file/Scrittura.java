@@ -8,7 +8,7 @@ public class Scrittura {
             if (Files.notExists(percorso.getParent())) {
                 Files.createDirectories(percorso.getParent());
             }
-            String contenuto = "Jisos gay";
+            String contenuto = "pappagallo";
             Files.writeString(percorso, contenuto, 
                 StandardOpenOption.CREATE,
                 StandardOpenOption.TRUNCATE_EXISTING
