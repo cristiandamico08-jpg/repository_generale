@@ -60,7 +60,7 @@ class Professore {
     - materia: String
     --
     + getMateria(): String
-    - setMateria(String materia): void
+    + setMateria(String materia): void
 }
 
 class Studente {
@@ -74,6 +74,7 @@ Professore --|> Persona : Extends
 Studente --|> Persona : Extends
 Libro --|> ArticoloBiblioteca : Extends
 Rivista --|> ArticoloBiblioteca : Extends
+ArticoloScientifico --|> Rivista : Extends
 ArticoloScientifico "0..*" --* "1" Rivista : < Contiene
 Persona "1..*" --* "0..*" ArticoloBiblioteca : > Può prendere
 
