@@ -1,0 +1,81 @@
+@startuml diagrammaClassi.puml
+
+class ArticoloBiblioteca{
+    - codiceUnivoco: int
+    - titolo: String
+    - autore: String
+    - presoInPrestito: boolean
+    - periodoPrestitoInGiorni: int
+    --
+    + getCodiceUnivoco(): int
+    + getTitolo(): String
+    + getAutore(): String
+    + getPresoInPrestito(): boolean
+    + getPeriodoPrestitoInGiorni(): int
+    + setCodiceUnivoco(int codiceUnivoco): void
+    + setTitolo(String titolo): void
+    + setPagine(String autore): void
+    + setPresoInPrestito(boolean presoInPrestito): void
+    + setPeriodoPrestitoInGiorni(int periodoPrestitoInGiorni): void
+}
+
+class Libro {
+    - numCopie: int
+    --
+    + getNumCopie(): int
+    + setNumCopie(int numCopie): void
+}
+
+class Rivista {
+    - ISSN: String
+    - periodicita: String
+    --
+    + getISSN(): String
+    + getPeriodicita(): String
+    + setISSN(String ISSN): void
+    + setPeriodicita(String periodicita): void
+}
+
+class ArticoloScientifico {
+    - numeroVolume: int
+    - pagine: int
+    --
+    + getNumeroVolume(): int
+    + getPagine(): int
+    + setNumeroVolume(int numeroVolume): int
+    + setPagine(int pagine): int
+}
+
+class Persona {
+    - nome: String
+    - cognome: String
+    --
+    + getNome(): String
+    + getCognome(): String
+    + setNome(String nome): void
+    + setCognome(String cognome): void
+}
+
+class Professore {
+    - materia: String
+    --
+    + getMateria(): String
+    + setMateria(String materia): void
+}
+
+class Studente {
+    - numeroMatricola: int
+    --
+    + getNumeroMatricola(): int
+    + setNumeroMatricola(int numeroMatricola): void
+}
+
+Professore --|> Persona : Extends
+Studente --|> Persona : Extends
+Libro --|> ArticoloBiblioteca : Extends
+Rivista --|> ArticoloBiblioteca : Extends
+ArticoloScientifico --|> Rivista : Extends
+ArticoloScientifico "0..*" --* "1" Rivista : < Contiene
+Persona "1..*" --* "0..*" ArticoloBiblioteca : > Può prendere
+
+@enduml
