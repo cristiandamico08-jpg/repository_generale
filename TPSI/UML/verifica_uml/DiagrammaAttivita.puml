@@ -1,0 +1,25 @@
+@startuml DiagrammaAttivita.puml
+
+start
+
+:Il paziente compila\ni dati personali;
+:Il paziente preme il tasto\n"invia prenotazione";
+
+if(La segretaria visualizza la prenotazione) then (accettaPrenotazione = true)
+
+    :System.out.println("La prenotazione è stata accettata");;
+
+    : - IDVisita = (numero ID)
+     - reparto = (dati reparto);
+
+    :System.out.println("Assegnato al dot. " + medico.getCognome()\n+ " al reparto " + reparto.getNomeReparto()\n+ " il giorno " + reparto.getDataPrenotazione());;
+    
+    : - diagnosi = (dati diagnosi)
+     - terapia = (dati terapia);
+
+else (accettaPrenotazione = false)    
+endif
+
+stop
+
+@enduml

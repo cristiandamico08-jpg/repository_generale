@@ -1,0 +1,27 @@
+@startuml DiagrammaCasiDUso.puml
+
+left to right direction
+
+:Medico:
+:Paziente:
+:Segretaria:
+
+rectangle "Gestione Clinica Medica" {
+    usecase "Prenotare Visita" as prenota
+    usecase "Visualizza Visita" as visualizza
+    usecase "Esegui Visita" as esegui
+    usecase "Accetta Visita" as accetta
+    usecase "Dai diagnosi\ne terapia" as diagnosi
+}
+
+Paziente --> prenota
+Paziente --> visualizza
+Medico --> visualizza
+Segretaria --> accetta
+visualizza ..> esegui : <<include>>
+accetta ..> esegui : <<extends>>\nLa visita deve\nessere prima accettata
+esegui ..> diagnosi : <<include>>
+accetta ..> visualizza : <<extends>>\nLa segretaria visualizza\nprima di poter accettare
+prenota ..> visualizza : <<extends>>\nSi può avere la possibilità\ndi visualizzare lo stato della visita
+
+@enduml

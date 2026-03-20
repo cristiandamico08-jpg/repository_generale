@@ -1,0 +1,34 @@
+@startuml DiagrammaSequenza.puml
+
+actor Paziente
+participant Interfaccia
+actor Segretaria
+actor Medico
+participant "Esecuzione Visita" as esecuzione
+
+
+Paziente -> Interfaccia : [1] Compila dati ed invio richiesta
+activate Paziente
+activate Interfaccia
+Interfaccia -> Segretaria : [2] La domanda viene inviata
+alt Accettazione domanda
+activate Segretaria
+Segretaria -> Interfaccia : [3] Conferma
+Segretaria -> Medico : [4] Invio dati paziente
+activate Medico
+Medico -> esecuzione : [5] Viene eseguita la visita
+activate esecuzione
+esecuzione -> Medico : [6] Vengono ricavati i dati della visita
+deactivate esecuzione
+Medico -> Interfaccia : [7] Comunicazione dati
+deactivate Medico
+Interfaccia -> Paziente : [8] Riceve Dati
+else Viene rifiutata
+Segretaria -> Interfaccia : [3] Rifiuto
+deactivate Segretaria
+Interfaccia -> Paziente : [4] Comunicazione rifiuto
+deactivate Interfaccia
+deactivate Paziente
+
+end
+@enduml

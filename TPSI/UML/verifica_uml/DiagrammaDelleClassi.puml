@@ -1,0 +1,96 @@
+@startuml DiagrammaDelleClassi.puml
+
+class Persona {
+    - nome: String
+    - cognome: String
+    - codiceFiscale: String
+    - dataDiNascita: String
+    --
+    + getNome(): String
+    + getCognome(): String
+    + getCodiceFiscale(): String
+    + getDataDiNascita(): String
+    + setNome(String nome): void
+    + setCognome(String cognome): void
+    + setCodiceDiscale(String codiceFiscale): void
+    + setDataDiNascita(String dataDiNascita): void
+}
+
+class Paziente {
+    - repartoPrenotato: Reparto
+    --
+    + getRepartoPrenotato(): Reparto
+    + setRepartoPrenotato(Reparto repartoPrenotato): void
+}
+
+class Medico {
+    - repartoAppartenenza: Reparto
+    --
+    + getRepartoAppartenenza(): Reparto
+    + setRepartoAppartenenza(Reparto repartoAppartenenza): void
+}
+
+class Segretaria {
+    - accettaVisita: boolean
+    --
+    + getAccettaVisita(): boolean
+    + setAccettaVisita(boolean accettaVisita): void
+}
+
+Paziente --|> Persona
+Medico --|> Persona
+Segretaria --|> Persona
+
+class Reparto {
+    + nomeReparto: String
+    + dataPrenotazione: String
+    + teamMedici: String
+    --
+    + getNomeReparto(): String
+    + getDataPrenotazione(): String
+    + getTeamMedici(): String
+    + setDataPrenotazione(String dataPrenotazione): void
+    + setTeamMedici(String teamMedici): void
+}
+
+class Diagnosi {
+    + esito: String
+    --
+    + getEsito(): String
+}
+
+class Terapia {
+    - terapia: String
+    --
+    + getTerapi(): String
+}
+
+Medico "1" --* "1..*" Reparto : Appartiene
+Medico "1" --* "0..*" Diagnosi : Esegue
+Medico "1" --* "0..*" Terapia : Consegna
+
+class Visita {
+    - IDVisita: int
+    - paziente: Paziente
+    - medico: Medico
+    - reparto: Reparto
+    - diagnosi: Diagnosi
+    - terapia: Terapia
+    --
+    + getIDVisita(): int
+    + getPaziente(): Paziente
+    + getMedico(): Medico
+    + getReparto(): Reparto
+    + getDiagnosi(): Diagnosi
+    + getTerapia(): Terapia
+    + setIDVisita(int IDVisita): void
+    + setPaziente(Paziente paziente): void
+    + setMedico(Medico medico): void
+    + setReparto(Reparto reparto): void
+    + setDiagnosi(Diagnosi diagnosi): void
+    + setTerapia(Terapia terapia): void
+}
+
+Persona "1..*" --* "1..*" Visita : Usufruisce
+
+@enduml

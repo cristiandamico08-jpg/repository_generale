@@ -1,0 +1,24 @@
+@startuml DiagrammaDiStato.puml
+
+[*] --> Accettazione : Il paziente invia\nla prenotazione\ndella visita
+
+Accettazione : accettaVisita = null
+
+Accettazione --> [*] : Viene rifiutata\n(accettaVisita = false)
+Accettazione --> Assegnazione : Viene accettata\n(accettaVisita = true)
+
+Assegnazione: IDVisita = (numero ID)
+Assegnazione: paziente = (dati paziente)
+Assegnazione: medico = (dati medico)
+Assegnazione: reparto = (dati reparto)
+Assegnazione: diagnosi = null
+Assegnazione: terapia = null
+
+Assegnazione --> Diagnosi : Dopo aver\nsvolto la visita
+
+Diagnosi: diagnosi = (dati diagnosi)
+Diagnosi: terapia = (dati terapia)
+
+Diagnosi --> [*] : Termino la visita
+
+@enduml
