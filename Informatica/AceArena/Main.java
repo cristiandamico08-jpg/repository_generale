@@ -2,9 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-import classi.*;
-import eccezioni.*;
-
 public class Main extends JFrame{
     
     private JTextField nomeInput;
@@ -69,6 +66,8 @@ public class Main extends JFrame{
         panel1.add(aggiungiGiocatore);
         panel1.add(output);
 
+        aggiungiGiocatore.addActionListener(new aggiungiGiocatoreListener());
+
         add(panel1);
 
         setVisible(true);
@@ -77,11 +76,7 @@ public class Main extends JFrame{
     public class aggiungiGiocatoreListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
-            if(affitto.isSelected()){
-                if (racchettaSi.isSelected()) {
-                    
-                }
-            }
+            JOptionPane.showMessageDialog(null, "Giocatore aggiunto!");
         }
     }
 
