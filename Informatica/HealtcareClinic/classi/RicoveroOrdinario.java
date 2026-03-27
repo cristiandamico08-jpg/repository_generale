@@ -15,7 +15,7 @@ public class RicoveroOrdinario extends Paziente{
             tariffaBase = (tariffaBase + 20) * numeroGiorni;
         }
         arrotondamento = Math.round(tariffaBase * 100) / 100;
-        System.out.println("\nIl costo finale e' di " + arrotondamento + " euro.");
+        this.setTariffaBase(arrotondamento);
     }
 
 }
