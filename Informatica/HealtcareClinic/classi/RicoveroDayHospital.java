@@ -11,16 +11,14 @@ public class RicoveroDayHospital extends Paziente{
         double tariffaBase = 100;
         super.setTariffaBase(tariffaBase);
         double arrotondamento = 0;
-        if(pastoPersonalizzato == false){
-            tariffaBase = tariffaBase * numeroGiorni;
-            if(numeroGiorni > 5){
-                tariffaBase = (tariffaBase * 20) / 100;
-            }
+        tariffaBase = tariffaBase * numeroGiorni;
+        if(numeroGiorni > 5){
+            tariffaBase = tariffaBase - ((tariffaBase * 20) / 100);
         }
 
         arrotondamento = Math.round(tariffaBase * 100) / 100;
         
-        System.out.println("\nIl costo finale e' di " + arrotondamento + " euro.");
+        this.setTariffaBase(arrotondamento);
     }
 
 }

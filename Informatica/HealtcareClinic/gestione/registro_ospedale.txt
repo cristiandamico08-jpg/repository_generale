@@ -1,4 +1,9 @@
 
 LOG
 
-Fajid 1 1200.0
+
+ - di santo 5 3960.0 euro (Paziente Ordinario)
+ - jisos 4 120.0 euro (Paziente Ordinario)
+ - d amico 1 100.0 euro (Paziente Ordinario)
+ - milano 11 200.0 euro (Paziente Day Hospital)
+ - fagna 10 800.0 euro (Paziente Day Hospital)

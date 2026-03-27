@@ -13,6 +13,8 @@ public class RicoveroOrdinario extends Paziente{
         double arrotondamento = 0;
         if(pastoPersonalizzato == true){
             tariffaBase = (tariffaBase + 20) * numeroGiorni;
+        } else {
+            tariffaBase = tariffaBase * numeroGiorni;
         }
         arrotondamento = Math.round(tariffaBase * 100) / 100;
         this.setTariffaBase(arrotondamento);
