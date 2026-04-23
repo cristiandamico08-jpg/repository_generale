@@ -22,6 +22,9 @@ public class Coda {
         } else {
             p = first;
             first = p.getNext();
+            if (first == null) {
+                this.last = null;
+            }
             s = "\n\nIl prossimo in coda e' " + p.getCognome() + " " + p.getNome() + "\nCliente servito!\n\n";
             this.incasso = incasso + ((p.getImporto() * 100) / 100);
         }
