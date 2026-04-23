@@ -17,6 +17,7 @@ public class Coda {
         String s = "";
 
         if (first == null) {
+            this.last = null;
             s = "\n\nNon ci sono persone in coda!";
         } else {
             p = first;

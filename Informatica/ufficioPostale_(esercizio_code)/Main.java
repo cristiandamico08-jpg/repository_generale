@@ -29,6 +29,7 @@ public class Main{
             switch (scelta) {
                 case "0":
                     System.out.println("\n\n\n\nArrivederci...");
+                    scanner.close();
                     System.exit(0);
                 
                 case "1":
@@ -40,6 +41,7 @@ public class Main{
 
                     System.out.print("Inserisci importo: ");
                     importo = scanner.nextDouble();
+                    scanner.nextLine();
 
                     coda.push(nome, cognome, importo);
                     System.out.println("Utente registrato!\n\n");
