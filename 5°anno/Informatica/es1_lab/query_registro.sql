@@ -1,0 +1,10 @@
+ - Formattazione email: SELECT DISTINCT nome, cognome, UPPER(email) AS email FROM anagrafica_voti;
+ - Iniziali e Lunghezza Cognome: SELECT DISTINCT LEFT(nome, 1) AS lettera_iniziale , LENGTH(cognome) AS lunghezza_cognome FROM anagrafica_voti;
+ - Mese di Nascita dal Codice Fiscale: SELECT SUBSTRING(codice_fiscale, 7, 2) FROM anagrafica_voti;
+ - Dominio Email: SELECT REPLACE(email, "@email.it", "@scuola.it") AS email FROM anagrafica_voti;
+ - Classifica Voti: SELECT DISTINCT voto FROM anagrafica_voti ORDER BY voto DESC LIMIT 5;
+ - Voto in Centesimi: SELECT (voto * 10) AS voto_in_centesimi FROM anagrafica_voti;
+ - Differenza dal Voto Massimo: SELECT (10 - voto) AS differenza_voto_massimo FROM anagrafica_voti;
+ - Statistiche sulle Date: SELECT YEAR(data_nascita) AS anno_di_nascita FROM anagrafica_voti;
+ - Conteggio Materie Distinte: SELECT COUNT(DISTINCT nome_materia) AS conteggio_materie_distinte FROM anagrafica_voti;
+ - Formattazione Nome Completo: SELECT CONCAT(nome, " ",cognome) AS studente_completo FROM anagrafica_voti;
