@@ -1,0 +1,4 @@
+ - Rapporto tra Voti e Medie Generali (Operatori matematici & Subquery): SELECT nome, cognome, nome_materia, voto, (voto - (SELECT AVG(voto) FROM anagrafica_voti)) AS scarto FROM anagrafica_voti;
+ - Formattazione Nomi Utente ed Email Aziendali (Funzioni di stringa): SELECT DISTINCT CONCAT(LOWER(SUBSTRING(nome, 1, 3)), LOWER(SUBSTRING(cognome, 1, 3)), SUBSTRING(codice_fiscale, 7, 2)) AS formattazione_stringa FROM anagrafica_voti;
+ - Mese di Nascita in Lettere dal Codice Fiscale (Subquery / Funzioni di Stringa): SELECT nome, cognome, codice_fiscale, SUBSTRING(codice_fiscale, 9, 1) AS iniziale_mese_di_nascita FROM anagrafica_voti WHERE SUBSTRING(codice_fiscale, 9, 1) = "M" OR SUBSTRING(codice_fiscale, 9, 1) = "L";
+ - Rilevamento "Voti Anomali" (Filtri complessi con Subquery): SELECT nome, cognome, nome_materia, voto FROM anagrafica_voti WHERE voto < ((SELECT MAX(voto) FROM anagrafica_voti) - 2.5);
