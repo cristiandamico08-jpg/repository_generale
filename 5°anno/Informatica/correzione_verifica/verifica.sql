@@ -1,0 +1,5 @@
+ - Esercizio 1: SELECT DISTINCT citta_consegna FROM scontrini_ortofrutta WHERE nome_prodotto LIKE "%e%" ORDER BY citta_consegna ASC;
+ - Esercizio 2: SELECT * FROM scontrini_ortofrutta WHERE (nome_cliente, cognome_cliente) IN (SELECT nome_cliente, cognome_cliente FROM scontrini_ortofrutta WHERE nome_prodotto = "Cachi");
+ - Esercizio 3: SELECT citta_consegna, SUM(quantita_kg) AS totale_kg, COUNT(id_scontrino) AS numero_acquisti FROM scontrini_ortofrutta GROUP BY citta_consegna ORDER BY SUM(quantita_kg) DESC;
+ - Esercizio 4: SELECT nome_prodotto, AVG(quantita_kg * prezzo_per_kg) AS incasso_medio FROM scontrini_ortofrutta GROUP BY nome_prodotto HAVING AVG(quantita_kg * prezzo_per_kg) > 6.00;
+ - Esercizio 5: SELECT nome_cliente, cognome_cliente, SUM(quantita_kg * prezzo_per_kg) AS spesa_totale FROM scontrini_ortofrutta WHERE metodo_pagamento IN ("Carta", "Satispay") GROUP BY nome_cliente, cognome_cliente HAVING SUM(quantita_kg * prezzo_per_kg) > 10.00;
