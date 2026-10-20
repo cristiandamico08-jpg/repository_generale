@@ -171,10 +171,10 @@ header {
     text-decoration: underline;
 }
 
-#menuCena {
+#menuPortate {
     padding-top: 150px;
     padding-bottom: 25px;
-    background-image: linear-gradient(rgba(234, 234, 211, 0.8), rgba(234, 234, 211, 0.8)), url("../../assets/img/sfondi/sfondoCena.png");
+    background-image: linear-gradient(rgba(234, 234, 211, 0.8), rgba(234, 234, 211, 0.8)), url("../../assets/img/sfondi/sfondoPortate.png");
     background-size: cover;
     background-position: center;
     color: black;
@@ -205,7 +205,6 @@ footer {
     width: 100%;
     justify-content: space-between;
     border-bottom: solid rgb(24, 25, 33) 5px;
-
 }
 
 #logoFooter img {
@@ -241,4 +240,332 @@ footer {
 
 .classeSocial a:active {
     color: brown;
+}
+
+/*Per file: posizione.html*/
+
+#boxPosizione{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#testoPosizione {
+    padding-left: 50px;
+}
+
+#testoPosizione table, th, td {
+    text-align: center;
+    border: solid black 1px;
+    border-spacing: 0px;
+}
+
+#testoPosizione th, td{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#maps {
+    padding-right: 50px;
+}
+
+#maps iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+/*Mobile*/
+
+@media (max-width: 700px) {
+    /* Header fisso */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        align-items: center;
+        flex-direction: column;
+        padding: 6px 10px;
+    }
+
+    #logoHeader {
+        display: block;
+        width: auto;
+        height: 65px;
+        padding-left: 0;
+    }
+
+    #divLista {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    #lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 16px;
+        margin: 6px 0;
+        padding: 0;
+    }
+
+    /* Spazio per non far coprire la pagina dall'header */
+    body {
+        padding-top: 125px;
+        overflow-x: hidden;
+    }
+
+    /* Titolo e pulsanti iniziali */
+    #primaParte {
+        height: auto;
+        min-height: 380px;
+        box-sizing: border-box;
+        padding: 45px 18px;
+    }
+
+    #primaParte h1 {
+        padding: 0;
+        font-size: clamp(30px, 8vw, 42px);
+    }
+
+    #primaParte h2 {
+        font-size: 20px;
+    }
+
+    #pulsanti {
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 17px;
+    }
+
+    #pulsanti p {
+        margin: 12px 0;
+    }
+
+    /* Sezioni pizze e altri piatti */
+    .boxCibo {
+        flex-direction: column;
+        gap: 20px;
+        margin: 40px 18px;
+        font-size: 17px;
+    }
+
+    .boxCibo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .testoCibo h1 {
+        font-size: clamp(30px, 8vw, 40px);
+    }
+
+    .testoCibo h2 {
+        font-size: 21px;
+    }
+
+    .testoCibo p {
+        padding-top: 8px;
+    }
+
+    /* Riquadri dei menu */
+    #menuHome {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 15px;
+    }
+
+    #menuPortate,
+    #menuBere {
+        height: 280px;
+        box-sizing: border-box;
+        margin-top: 25px;
+        padding: 35px 18px;
+    }
+
+    /* Footer */
+    footer {
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #logoFooter img {
+        width: 145px;
+        padding-left: 0;
+    }
+
+    #social {
+        padding-right: 0;
+        justify-items: center;
+    }
+
+    .classeSocial {
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* Pagina "Dove siamo?" */
+    #boxPosizione {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 16px;
+        box-sizing: border-box;
+    }
+
+    #testoPosizione {
+        padding-left: 0;
+        overflow-x: auto;
+    }
+
+    #testoPosizione table {
+        font-size: 12px;
+    }
+
+    #testoPosizione th,
+    #testoPosizione td {
+        padding: 4px;
+    }
+
+    #maps {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #maps iframe {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 320px;
+        border: 0;
+    }
+}
+
+/* mobile orizzontale */
+@media (max-width: 1200px) and (orientation: landscape) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: auto;
+        min-height: 58px;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 12px;
+    }
+
+    #logoHeader {
+        display: block;
+        width: auto;
+        height: 48px;
+        padding-left: 0;
+    }
+
+    #divLista {
+        width: auto;
+        padding: 0;
+        font-size: clamp(11px, 1.5vw, 15px);
+    }
+
+    #lista {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 4px clamp(8px, 1.5vw, 18px);
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding-top: 70px;
+        overflow-x: hidden;
+    }
+
+    #primaParte {
+        height: auto;
+        min-height: 260px;
+        box-sizing: border-box;
+        padding: 32px 20px;
+    }
+
+    #primaParte h1 {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0;
+        font-size: clamp(26px, 4vw, 42px);
+    }
+
+    #primaParte h2 {
+        font-size: clamp(17px, 2.2vw, 24px);
+    }
+
+    #pulsanti {
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        font-size: clamp(14px, 1.8vw, 20px);
+    }
+
+    .boxCibo {
+        align-items: center;
+        gap: 28px;
+        margin: 36px clamp(20px, 5vw, 70px);
+        font-size: clamp(15px, 1.6vw, 18px);
+    }
+
+    .boxCibo img {
+        width: min(38vw, 400px);
+        height: auto;
+    }
+
+    .testoCibo h1 {
+        font-size: clamp(28px, 4vw, 42px);
+    }
+
+    .testoCibo h2 {
+        font-size: clamp(18px, 2.2vw, 24px);
+    }
+
+    #menuHome {
+        gap: 14px;
+    }
+
+    #menuPortate,
+    #menuBere {
+        height: 300px;
+        box-sizing: border-box;
+        padding: 50px 20px;
+    }
+
+    #boxPosizione {
+        gap: 24px;
+        padding: 28px 20px;
+        box-sizing: border-box;
+    }
+
+    #testoPosizione {
+        padding-left: 0;
+        overflow-x: auto;
+    }
+
+    #maps {
+        width: 48%;
+        padding-right: 0;
+    }
+
+    #maps iframe {
+        width: 100%;
+        height: clamp(260px, 45vh, 420px);
+    }
 }
