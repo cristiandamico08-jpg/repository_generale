@@ -3,7 +3,7 @@
 <head>
     <title>Le Bistrot di Zii Gaetano - Ristorante Pizzeria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="ristorante, bistrot, Liscate, pizza, pizza al trancio">
+    <meta name="keywords" content="le bistrot di zii gaetano, Le Bistrot di Zii Gaetano, ristorante, bistrot, Liscate, pizza, pizza al trancio">
     <meta name="description" content="Homepage del sito">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/style.css">
@@ -42,11 +42,11 @@
             <p>Dai grandi classici alle combinazioni più sfiziose, c'e' sempre una pizza pronta a conquistarti.</p>
             <p><b>Scegli il tuo trancio preferito e lasciati tentare!</b></p>
         </div>
-        <img src="assets/img/pizza.png">
+        <img src="assets/img/pizza.png" alt="immagine pizza">
     </div>
 
     <div class="boxCibo">
-        <img src="assets/img/piatto.png">
+        <img src="assets/img/piatto.png" alt="immagine piatto di pasta">
         <div class="testoCibo">
             <h1>OLTRE ALLA PIZZA</h1>
             <h2>Non solo pizza, ma tanto gusto da scoprire.</h2>
@@ -59,9 +59,7 @@
 
     <div id="menuHome">
         <div id="menuPortate">
-            <a href="src/html/portate.html">
-            <h1>MENU PORTATE</h1>
-            </a>
+            <a href="src/html/portate.html"><h1>MENU PORTATE</h1></a>
         </div>
         <div id="menuBere">
             <a href="src/html/bevande.html"><h1>MENU BEVANDE</h1></a>
@@ -72,6 +70,21 @@
         <div id="logoFooter">
             <a href="#primaParte"><img src="assets/img/loghi/logoBianco.png"></a>
         </div>
+
+        <div id="recensione">
+            <p><b>RECENSISCI QUI!</b></p>
+            <button id="bottoneRecensione" popovertarget="popup"><center><img src="assets/img/stelle.png" alt="Lascia una recensione!" title="Lascia una recensione!"></center></button>
+            <div id="popup" popover>
+                <div id="chiudi">
+                    <button popovertarget="popup" popovertargetaction="hide" id="bottoneChiudi">x</button>
+                </div>
+                
+                <div id="reviews-widget-353">
+                    <script src="https://starwall.io/embed/JxoFnFaw6rB3oCl8QjGAnPBm6PbgBHlC/widget.js" async></script>
+                </div>
+            </div>
+        </div>
+
         <div id="social">
             <div class="classeSocial">
                 <a href="https://www.facebook.com/Lebistrotdiziigaetano/?locale=it_IT" target="_blank"><p>FACEBOOK</p></a>

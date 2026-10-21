@@ -15,10 +15,10 @@
         <div id="divLista">
             <ul id="lista">
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="../html/disco.html">Disco Karaoke Night</a></li>
-                <li><a href="../html/portate.html">Menu Portate</a></li>
-                <li><a href="../html/bevande.html">Menu Bevande</a></li>
-                <li id="selezione"><a href="../html/posizione.html">Luogo e Orari</a></li>
+                <li><a href="disco.html">Disco Karaoke Night</a></li>
+                <li><a href="portate.html">Menu Portate</a></li>
+                <li><a href="bevande.html">Menu Bevande</a></li>
+                <li id="selezione"><a href="#boxPosizione">Luogo e Orari</a></li>
             </ul>
         </div>
     </header>
@@ -30,6 +30,7 @@
                 <li><b>Indirizzo:</b> Via Bruno Buozzi, 21</li>
                 <li><b>Paese:</b> Liscate (MI)</li>
             </ul>
+            <h1>&#x1F4DE; <a href="tel:+39 340 402 1384" id="cell">+39 340 402 1384</a></h1>
             <h1>&#8986; SIAMO APERTI...</h1>
             <ul>
                 <li><b>Colazione:</b> 04:30 - 11:00</li>
@@ -114,6 +115,21 @@
         <div id="logoFooter">
             <a href="../../index.html"><img src="../../assets/img/loghi/logoBianco.png"></a>
         </div>
+
+        <div id="recensione">
+            <p><b>RECENSISCI QUI!</b></p>
+            <button id="bottoneRecensione" popovertarget="popup"><center><img src="../../assets/img/stelle.png" alt="Lascia una recensione!" title="Lascia una recensione!"></center></button>
+            <div id="popup" popover>
+                <div id="chiudi">
+                    <button popovertarget="popup" popovertargetaction="hide" id="bottoneChiudi">x</button>
+                </div>
+                
+                <div id="reviews-widget-353">
+                    <script src="https://starwall.io/embed/JxoFnFaw6rB3oCl8QjGAnPBm6PbgBHlC/widget.js" async></script>
+                </div>
+            </div>
+        </div>
+
         <div id="social">
             <div class="classeSocial">
                 <a href="https://www.facebook.com/Lebistrotdiziigaetano/?locale=it_IT" target="_blank"><p>FACEBOOK</p></a>
