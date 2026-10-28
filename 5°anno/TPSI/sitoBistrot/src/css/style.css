@@ -79,7 +79,7 @@ header {
     margin-top: 5px;
 }
 
-#pulsanti {
+.pulsanti {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -87,7 +87,7 @@ header {
     font-weight: bold;
 }
 
-#pulsanti p a {
+.pulsanti p a {
     background-color: rgb(255, 251, 232);
     padding-left: 20px;
     padding-right: 20px;
@@ -99,18 +99,18 @@ header {
     text-decoration: none;
 }
 
-#pulsanti p a:hover {
+.pulsanti p a:hover {
     background-color: rgb(227, 224, 207);
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border: solid rgb(255, 251, 232) 5px;
+    border: slid rgb(255, 251, 232) 5px;
     border-radius: 10px;
     color: brown;
 }
 
-#pulsanti p a:active {
+.pulsanti p a:active {
     background-color: brown;
     padding-left: 20px;
     padding-right: 20px;
@@ -539,13 +539,13 @@ footer {
         font-size: 20px;
     }
 
-    #pulsanti {
+    .pulsanti {
         flex-wrap: wrap;
         gap: 12px;
         font-size: 17px;
     }
 
-    #pulsanti p {
+    .pulsanti p {
         margin: 12px 0;
     }
 
@@ -696,14 +696,14 @@ footer {
         font-size: 16px;
     }
 
-    #pulsantiPortate #pulsanti {
+    #pulsantiPortate .pulsanti {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px 12px;
         font-size: 16px;
     }
 
-    #pulsantiPortate #pulsanti p {
+    #pulsantiPortate .pulsanti p {
         margin: 10px 0;
     }
 
@@ -854,7 +854,7 @@ footer {
         font-size: clamp(17px, 2.2vw, 24px);
     }
 
-    #pulsanti {
+    .pulsanti {
         flex-wrap: wrap;
         gap: 8px 20px;
         font-size: clamp(14px, 1.8vw, 20px);
@@ -954,14 +954,14 @@ footer {
         gap: 0;
     }
 
-    #pulsantiPortate #pulsanti {
+    #pulsantiPortate .pulsanti {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px 16px;
         font-size: clamp(17px, 2vw, 22px);
     }
 
-    #pulsantiPortate #pulsanti p {
+    #pulsantiPortate .pulsanti p {
         margin: 12px 0;
     }
 
