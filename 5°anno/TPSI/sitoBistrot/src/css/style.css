@@ -702,6 +702,17 @@ footer {
         gap: 8px 12px;
         font-size: 16px;
     }
+    
+    .pulsanti {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+        font-size: 16px;
+    }
+    
+    .pulsanti p {
+        margin: 10px 0;
+    }
 
     #pulsantiPortate .pulsanti p {
         margin: 10px 0;
@@ -960,8 +971,19 @@ footer {
         gap: 8px 16px;
         font-size: clamp(17px, 2vw, 22px);
     }
+    
+    .pulsanti {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+        font-size: clamp(17px, 2vw, 22px);
+    }
 
     #pulsantiPortate .pulsanti p {
+        margin: 12px 0;
+    }
+    
+    .pulsanti p {
         margin: 12px 0;
     }
 
